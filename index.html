@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
     <title>Netflix</title>
 </head>
 
@@ -14,15 +15,42 @@
     <header>
 
         <div class="container">
-            <a href=""><img class="logo-img" src="img/logo.png" alt="Logo"></a>
-            <nav class="menu-nav">
-                <a href="#">Home</a>
+            <nav class="left-menu">
+                <a href=""><img class="logo-img" src="img/logo.png" alt="Logo"></a>
+                <a href="#" class="home-buttom">Home</a>
                 <a href="#">TV Shows</a>
                 <a href="#">Movies</a>
                 <a href="#">latest</a>
                 <a href="#">My List</a>
             </nav>
+            <nav class="rigth-menu">
+                <a href=""><img class="menu-icon" src="img/search-icon.png" alt="search"></a>
+                <a href="">KIDS</a>
+                <a href="">DVD</a>
+                <a href=""><img class="menu-icon" src="img/gitf-icon.png" alt="gift"></a>
+                <a href=""><img class="menu-icon" src="img/bell-icon.png" alt="bell"></a>
+                <div onclick="showMenuProfile ()" class="profile">
+                    <img class="menu-icon" src="img/profile01.png" alt="profile-picture">
+                    <img  class="arrow-drop" src="img/arrow-drop-down.png" alt="arrow-drop-down">
+                </div>
+
+            </nav>
         </div>
+
+        <nav id="menu-profile" class="menu-profile">
+            <ul>
+                <li>
+                    <a href="">Trocar avatar</a>
+                </li>
+                <li>
+                    <a href="">Trocar senha</a>
+                </li>
+                <li>
+                    <a href="">Sair</a>
+                </li>
+            </ul>
+        </nav>
+
 
     </header>
 </body>

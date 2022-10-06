@@ -1,27 +1,107 @@
-*{
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
+
 }
-html {
-    background-color: white;
+
+html,
+body {
+    background-color: var(--black);
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
 
 .logo-img {
-    width: 7rem;
+    width: 8rem;
 }
 
+.menu-icon {
+    width: 2rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
 
 .container {
     display: flex;
-    width: 100%;
     align-items: center;
-    position: fixed;
-    
+    justify-content: space-between;
+    padding: 20px;
+
 }
 
-header .container{
-    background-image: linear-gradient(to bottom,black ,transparent);
+.left-menu {
+    display: flex;
+    align-items: center;
+
+}
+
+.rigth-menu {
+    display: flex;
+    align-items: center;
+
+}
+
+header .container {
+    background-image: linear-gradient(to bottom, var(--black), transparent);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 1.5rem;
+    font-weight: lighter;
+}
+
+.home-buttom {
+    font-weight: 900;
+}
+
+.profile {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile img {
+
+    margin-left: 5px;
+}
+
+.arrow-drop {
+    width: 1rem;
+}
+
+/*
+Menu-Profiled
+*/
+
+#menu-profile {
+    display: none;
+    justify-content: end;
+    background-color: var(--black);
+  
+}
+.menu-profile ul {
+    list-style: none;
+  
+}
+
+.menu-profile li {
+    padding: 5px;
+  
 }
