@@ -5,5 +5,4 @@ function showMenuProfile ()  {
     }else {
         menuProfile.style.display = "none";
     }
-
 }
