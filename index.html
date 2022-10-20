@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/profile.css">
     <script type="text/javascript" src="js/main.js"></script>
     
     <title>Netflix</title>
@@ -16,32 +17,34 @@
     <header>
 
         <div class="container">
-            <nav class="left-menu">
-                <a href="#"><img class="logo-img" src="img/logo.png" alt="Logo"></a>
-                <a href="#" class="home-buttom">Home</a>
-                <a href="#">TV Shows</a>
-                <a href="#">Movies</a>
-                <a href="#">latest</a>
-                <a href="#">My List</a>
-            </nav>
-            <nav class="rigth-menu">
-                <a href="#"><img class="menu-icon" src="img/search-icon.png" alt="search"></a>
-                <a href="#">KIDS</a>
-                <a href="#">DVD</a>
-                <a href="#"><img class="menu-icon" src="img/gitf-icon.png" alt="gift"></a>
-                <a href="#"><img class="menu-icon" src="img/bell-icon.png" alt="bell"></a>
-                <div id="menu-icon-drop" onclick="showMenuProfile ()" class="profile">
-                    <img id="icon-profile" class="menu-icon" src="img/profile01.png" alt="profile-picture">
-                    <img  class="arrow-drop" src="img/arrow-drop-down.png" alt="arrow-drop-down">
-                </div>
-
-            </nav>
+            <div class="top-menu">
+                <nav class="left-menu">
+                    <a href="#"><img class="logo-img" src="img/logo.png" alt="Logo"></a>
+                    <a href="#" class="home-buttom">Home</a>
+                    <a href="#">TV Shows</a>
+                    <a href="#">Movies</a>
+                    <a href="#">latest</a>
+                    <a href="#">My List</a>
+                </nav>
+                <nav class="rigth-menu">
+                    <a href="#"><img class="menu-icon" src="img/search-icon.png" alt="search"></a>
+                    <a href="#">KIDS</a>
+                    <a href="#">DVD</a>
+                    <a href="#"><img class="menu-icon" src="img/gitf-icon.png" alt="gift"></a>
+                    <a href="#"><img class="menu-icon" src="img/bell-icon.png" alt="bell"></a>
+                    <div id="menu-icon-drop" onclick="showMenuProfile ()" class="profile">
+                        <img id="icon-profile" class="menu-icon" src="img/profile01.png" alt="profile-picture">
+                        <img  class="arrow-drop" src="img/arrow-drop-down.png" alt="arrow-drop-down">
+                    </div>
+    
+                </nav>
+            </div>
         </div>
 
         <nav id="menu-profile" class="menu-profile">
             <ul>
                 <li>
-                    <a href="icon-selection.html">Trocar avatar</a>
+                    <p id="change-avatar-button">Trocar avatar</p>
                 </li>
                 <li>
                     <a href="">Trocar senha</a>
@@ -55,6 +58,36 @@
     </header>
     
     <main>
+        <div class="container">
+            <div id="avatarsWindow" class="poupup">
+                <div class="profile-box">
+                    <div id="close" class="row">
+                        <img id="closeButton" src="img/x.png" alt="">
+                    </div>
+                    <div class="row">
+                        <img class="profile-img" onclick="selectAvatar(this)" src="img/profile01.png" alt="">
+                        <img class="profile-img" onclick="selectAvatar(this)" src="img/profile02.png" alt="">
+                        <img class="profile-img" onclick="selectAvatar(this)" src="img/profile03.jpg" alt="">
+                    </div>
+                    <div class="row">
+                        <img class="profile-img" onclick="selectAvatar(this)" src="img/profile04.png" alt="">
+                        <img class="profile-img" onclick="selectAvatar(this)" src="img/profile05.png" alt="">
+                        <img class="profile-img" onclick="selectAvatar(this)" src="img/profile06.png" alt="">
+                    </div>
+                    <div class="row">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+    
+                    <div class="selection">
+                        <p onclick="submitAvatar()" id="submit-button" class="button">Selecionar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
         <div class="main-carrosel">
             <div>
 

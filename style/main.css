@@ -18,6 +18,7 @@ body {
     color: white;
     font-family: Helvetica, Helvetica, Arial, sans-serif;
     font-size: 16px;
+    height: 100%;
 }
 
 .logo-img {
@@ -35,11 +36,26 @@ header {
     width: 100%;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    width: 100%;
 
 }
 
@@ -59,14 +75,14 @@ header .container {
     background-image: linear-gradient(to bottom, var(--black), transparent);
 }
 
-nav a {
+nav a, nav p{
     text-decoration: none;
     color: #AAA;
     margin-right: 1.5rem;
     font-weight: lighter;
 }
 
-nav a:hover {
+nav a:hover, p:hover{
     color: #fff;
 }
 
@@ -108,4 +124,15 @@ Menu-Profiled
 .menu-profile li {
     padding: 5px;
   
+}
+
+/*
+Poupup
+*/
+
+.poupup{
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
 }

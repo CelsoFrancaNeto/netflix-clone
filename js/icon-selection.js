@@ -1,3 +1,6 @@
+document.getElementById("closeButton").addEventListener("click",closeAvatarsWindow);
+document.getElementById("change-avatar-button").addEventListener("click",openAvatarsWindow);
+
 function selectAvatar(elemento) {
    var avatars = document.getElementsByClassName("profile-img")
 
@@ -24,7 +27,12 @@ function submitAvatar() {
    for(i = 0; i < avatars.length ; i++)
       if(avatars[i].style.border == "solid red")
          icon.src= "img/profile03.png";
+}
 
-   
+function closeAvatarsWindow() {
+   document.getElementById("avatarsWindow").style.display = "none";
+}
 
+function openAvatarsWindow() {
+   document.getElementById("avatarsWindow").style.display = "block";
 }

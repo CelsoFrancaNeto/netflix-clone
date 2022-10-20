@@ -1,37 +1,4 @@
-:root {
-    --red: #E50914;
-    --black: #141414;
-}
 
-* {
-    padding: 0;
-    margin: 0;
-    border: none;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    background-color: var(--black);
-    color: white;
-    font-family: Helvetica, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    height: 100%;
-    overflow: hidden;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 .profile-box {
     display: flex;
@@ -45,6 +12,13 @@ main {
 .row img {
     width: 200px;
     margin: 5px;
+}
+#close {
+    justify-content: end;
+}
+#close img{
+    width: 50px;
+    margin: 0;
 }
 
 #exit {
