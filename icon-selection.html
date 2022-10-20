@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/icon-selection.js"></script>
+    <script type="text/javascript" src="js/icon-selection.js"></script>
     <link rel="stylesheet" href="style/profile.css">
     <title>Netflix</title>
 </head>
@@ -23,14 +23,14 @@
 
             <div class="profile-box">
                 <div class="row">
-                    <img class="profile-img" onclick="selectIcon(this)" src="img/profile01.png" alt="">
-                    <img class="profile-img" src="img/profile02.png" alt="">
-                    <img class="profile-img" src="img/profile03.jpg" alt="">
+                    <img class="profile-img" onclick="selectAvatar(this)" src="img/profile01.png" alt="">
+                    <img class="profile-img" onclick="selectAvatar(this)" src="img/profile02.png" alt="">
+                    <img class="profile-img" onclick="selectAvatar(this)" src="img/profile03.jpg" alt="">
                 </div>
                 <div class="row">
-                    <img class="profile-img" src="img/profile04.png" alt="">
-                    <img class="profile-img" src="img/profile05.png" alt="">
-                    <img class="profile-img" src="img/profile06.png" alt="">
+                    <img class="profile-img" onclick="selectAvatar(this)" src="img/profile04.png" alt="">
+                    <img class="profile-img" onclick="selectAvatar(this)" src="img/profile05.png" alt="">
+                    <img class="profile-img" onclick="selectAvatar(this)" src="img/profile06.png" alt="">
                 </div>
                 <div class="row">
                     <img src="" alt="">
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="selection">
-                    <p class="button">Selecionar</p>
+                    <p onclick="submitAvatar()" id="submit-button" class="button">Selecionar</p>
                 </div>
             </div>
         
